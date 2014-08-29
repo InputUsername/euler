@@ -6,7 +6,8 @@ end
 largest = 0
 for i in 0..999
 	for j in 0..999
-		largest = i*j if palindrome?(i*j)&&i*j>largest
+		p = i*j
+		largest = p if palindrome?(p)&&p>largest
 	end
 end
 puts "result: #{largest} - found in #{((Time.new.to_f - t)*1000).round 3} ms"

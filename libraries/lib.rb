@@ -1,6 +1,6 @@
 # load a list of words, formatted as "WORD","WORD 2","ETC"
-def load_words
-	file = File.new("files\words-42.txt","r")
+def load_list_file(file)
+	file = File.new(file,"r")
 	words = file.gets.tr("\"","").split(",")
 	file.close
 	words
