@@ -1,3 +1,4 @@
+# project euler 5: find the smallest number that is dividable by the numbers 1 through 20
 t = Time.new.to_f
 n = 1
 for i in 1..20
