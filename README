@@ -6,7 +6,7 @@ Languages covered:
 - Java 7
 
 Languages that will never be covered:
-- (Objective) C(++/#) -- big nope
+- /(Objective)? C(++|#)?/ -- big nope
 - JavaScript -- just... no
 - J -- hurts my eyes
 - Brainfuck -- wait, what
