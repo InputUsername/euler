@@ -8,5 +8,10 @@ Languages covered:
 Languages that will never be covered:
 - /(Objective)? C(++|#)?/ -- big nope
 - JavaScript -- just... no
-- J -- hurts my eyes
 - Brainfuck -- wait, what
+- GolfScript -- not aiming for the shortest code
+- Scheme/Lisp -- functional programming iz 4 n00bz
+
+Languages I might cover:
+- J -- I actually want to try this, looks like it could be "lots of fun"
+- Python -- might learn Python some day, so I'll use Python too
