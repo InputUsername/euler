@@ -10,12 +10,17 @@ if "%1"=="" (
 set a=.\com\inputusername\java\euler\%1
 set b=com.inputusername.java.euler.%1
 
+rem Display file
 echo.
 echo FILE: %a%
+
+rem Compile file
 echo.
 echo COMPILING: %a%.java
 javac %a%.java
 echo COMPILED TO: %a%.class
+
+rem Run file
 echo.
 if exist %a%.class (
 	echo RUNNING: %a%.class
