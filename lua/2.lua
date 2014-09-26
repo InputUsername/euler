@@ -1,25 +1,14 @@
-function F()
-	local f={1,1}
-	local i=3
-	local sum=0
-	
-	while true do
-		if i>4 then
-			f[i-3] = nil
-			f[i-4] = nil
-		end
-		
-		f[i]=f[i-1]+f[i-2]
-		
-		if f[i]%2==0 then
-			sum=sum+f[i]
-		end
-		i=i+1
-		
-		if (f[i] and f[i]>4e6) then break end
+--project euler 2: find the sum of all even Fibonacci numbers below 4,000,000
+package.path = "..\\libraries\\?.lua;" .. package.path
+require "lib"
+local t = os.clock()
+
+local sum = 0
+
+for n in lib.fibonacci(4e6) do
+	if (n%2 == 0) then
+		sum = sum+n
 	end
-	
-	return sum
 end
 
-print(F())
+print("result: "..sum.." - found in "..(os.clock() - t).." s")

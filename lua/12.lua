@@ -1,14 +1,22 @@
 -- project euler 12: find the first triangle number with more than 500 divisors
+
+--NOT WORKING!!! FIX!!!
+
+package.path = "..\\libraries\\?.lua;" .. package.path
 require "lib"
+local t = os.clock()
 
 local n = 1
-local d,t
+local dv,tr
 
 while true do
-	t = lib.triangle(n)
-	d = lib.divisors(t)
-	if (d > 500) then break end
-	n = n+1
+	tr = lib.triangle(n)
+	dv = lib.divisors(t)
+	if (dv > 500) then
+		break
+	end
+	n = n+4
+	print(n)
 end
 
-print(t)
+print("result: "..tr.." - found in "..(os.clock() - t).." s")

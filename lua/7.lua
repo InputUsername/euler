@@ -1,29 +1,18 @@
-local function is_prime(n)
-    for i=2,math.ceil(math.sqrt(n)) do
-        if n%i==0 then return false end
-    end
-    return true
-end
+--project euler 7: find the 10001st prime
+package.path = "..\\libraries\\?.lua;" .. package.path
+require "lib"
+local t = os.clock()
 
-local nth_prime=10001
-local current_number=0
-
-local numbers={}
+local i,result = 0,0
 
 while true do
-    if is_prime(current_number) then
-        numbers[#numbers+1] = current_number
-    end
-    
-    if #numbers-1==nth_prime then
-       break
-    end
-    
-    if current_number<=2 then
-        current_number=current_number+1
-    else
-        current_number=current_number+2
-    end
+	result = result+1
+	if (lib.is_prime(result)) then
+		i = i+1
+	end
+	if (i == 10001) then
+		break
+	end
 end
 
-print(numbers[#numbers])
+print("result: "..result.." - found in "..(os.clock() - t).." s")

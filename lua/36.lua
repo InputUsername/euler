@@ -1,25 +1,17 @@
---localize functions for speed
-local tos,rev,sub=tostring,string.reverse,string.sub
+--project euler 36: find the sum of all numbers below 1,000,000 which are palindromic in base 10 and base 2
+package.path = "..\\libraries\\?.lua;" .. package.path
+require "lib"
+local t = os.clock()
 
---as Lua does not have a built-in decimal-to-binary function
-local bin = function(n)
-    local c=n
-    local b={}
-    while(c~=0)do
-        table.insert(b,c%2)
-        c=math.floor(c/2)
-    end
-    return rev(table.concat(b,""))
-end
+local sum = 0
 
-local sum=0
 for i=0,(1e6)-1,1 do
-    if tos(i)==rev(i) then
-		--create variables for speed (not having to calculate rev(bin(i)) twice)
-        local r=rev(bin(i))
-        if bin(i)==r and sub(r,1,1)~="0" then
-            sum=sum+i
+    if (lib.is_palindrome(i)) then
+        local b = lib.to_binary(i)
+        if (lib.is_palindrome(b)) and (b:sub(1,1) ~= "0") then
+            sum = sum+i
         end
     end
 end
-print(sum)
+
+print("result: "..sum.." - found in "..(os.clock() - t).." s")

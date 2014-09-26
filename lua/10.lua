@@ -1,21 +1,21 @@
-local function is_prime(n)
-    for i=2,math.ceil(math.sqrt(n)) do
-        if n%i==0 then return false end
-    end
-    return true
-end
+--project euler <n>: <description>
+package.path = "..\\libraries\\?.lua;" .. package.path
+require "lib"
+local t = os.clock()
 
-local n=1--starting at 1 as starting at 0 would be pointless
-local sum=1
+local n = 1
+local sum = 1
 
 repeat
-	if is_prime(n) then sum=sum+n end
-	
-	if n<=2 then
-		n=n+1
-	else
-		n=n+2
+	if (lib.is_prime(n)) then
+		sum = sum+n
 	end
-until n==2e6-1
+	
+	if (n <= 2) then
+		n = n+1
+	else
+		n = n+2
+	end
+until (n == 2e6-1)
 
-print(sum)
+print("result: "..sum.." - found in "..(os.clock() - t).." s")

@@ -1,24 +1,24 @@
-local file = assert(io.open(".\\files\\words.txt","r"))
-local words = file:read("*all")
-file:close()
-local chunk = "return {"..words.."}"
-words = loadstring(chunk)()
+--project euler 42: find the amount of triangle words in a file (words-44.txt)
+package.path = "..\\libraries\\?.lua;" .. package.path
+require "lib"
+local t = os.clock()
 
-local t = {}
+local words = lib.load_words("words-42.txt")
+local tr = {}
 
 for n=1,1e7 do
 	local i = 0.5 * n * (n+1)
-	t[0.5*n*(n+1)] = true
+	tr[0.5 * n * (n+1)] = true
 end
 
-local alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-local values={}
+local alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+local values = {}
 for i=1,#alphabet do
-	values[alphabet:sub(i,i)]=i
+	values[alphabet:sub(i,i)] = i
 end
 
 local value = function(word)
-	local sum=0
+	local sum = 0
 	for c in word:gmatch(".") do
 		sum = sum + values[c]
 	end
@@ -30,9 +30,9 @@ local total = 0
 for _,word in pairs(words) do
 	local v = value(word)
 	
-	if t[v] then
+	if tr[v] then
 		total = total + 1
 	end
 end
 
-print(total)
+print("result: "..total.." - found in "..(os.clock() - t).." s")

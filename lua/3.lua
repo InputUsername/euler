@@ -1,18 +1,8 @@
-local function p(n)
-	if n==1 then
-		return 1
-	end
-	
-	local test = 2
-	while n > 1 do
-		if n%test == 0 then
-			n = n/test
-		else
-			test = test+1
-		end
-	end
-	
-	return test
-end
+--project euler 3: find the largest prime factor of 600851475143
+package.path = "..\\libraries\\?.lua;" .. package.path
+require "lib"
+local t = os.clock()
 
-print(p(600851475143))
+local result = lib.max_primefactor(600851475143)
+
+print("result: "..result.." - found in "..(os.clock() - t).." s")
