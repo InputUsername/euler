@@ -5,12 +5,12 @@ Languages covered:
 - Ruby 1.9.3
 - Lua 5.1
 - Java 7
+- GolfScript
 
 Languages that will never be covered:
 - /(Objective)? C(++|#)?/ -- big nope
 - JavaScript -- just... no
 - Brainfuck -- wait, what
-- GolfScript -- not aiming for the shortest code
 - Scheme/Lisp -- functional programming iz 4 n00bz
 
 Languages I might cover:
