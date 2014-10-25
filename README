@@ -1,6 +1,6 @@
 Project Euler solutions in as many languages as possible.
 Featuring bad programming practices, unreadable code and
-MS-Batch build scripts (like most programs ever written, yay!)
+MS-Batch build scripts (yay).
 
 Languages covered:
 - Ruby (1.9.3)
