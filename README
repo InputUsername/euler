@@ -1,18 +1,10 @@
 Project Euler solutions in as many languages as possible.
-Featuring bad programming practices, unreadable code and MS-Batch build scripts (like most programs ever written, yay!)
+Featuring bad programming practices, unreadable code and
+MS-Batch build scripts (like most programs ever written, yay!)
 
 Languages covered:
-- Ruby 1.9.3
-- Lua 5.1
-- Java 7
+- Ruby (1.9.3)
+- Lua (5.1)
+- Java
 - GolfScript
-
-Languages that will never be covered:
-- /(Objective)? C(++|#)?/ -- big nope
-- JavaScript -- just... no
-- Brainfuck -- wait, what
-- Scheme/Lisp -- functional programming iz 4 n00bz
-
-Languages I might cover:
-- J -- I actually want to try this, looks like it could be "lots of fun"
-- Python -- might learn Python some day, so I'll use Python too
+- C++
