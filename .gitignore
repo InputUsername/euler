@@ -2,3 +2,6 @@ java/com/inputusername/java/euler/*.class
 
 cpp/*.o
 cpp/*.exe
+
+c/bin
+c/Makefile
