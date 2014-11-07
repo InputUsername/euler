@@ -1,7 +1,7 @@
-001: Lua, Ruby, Java, GolfScript, C++, C
-002: Lua, Ruby, Java, GolfScript, C++
+001: Lua, Ruby, Java, GolfScript, C++, C, Python
+002: Lua, Ruby, Java, GolfScript, C++, Python
 003: Lua, Ruby, C++
-004: Lua, Ruby, C++
+004: Lua, Ruby, C++, Python
 005: Lua, Ruby, Java, C++
 006: Ruby
 007: Lua, Ruby
@@ -16,6 +16,8 @@
 016: Python
 017: Ruby
 ...
+020: Python
+021: Lua
 022: Lua
 ...
 036: Lua
