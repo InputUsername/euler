@@ -31,6 +31,28 @@ divisors = function(n)
 	return count
 end
 
+--returns all divisors of n
+find_divisors = function(n)
+	local i = 2
+	local d = {}
+	while (2*i < n) do
+		if (n%i == 0) then
+			table.insert(d,i)
+		end
+		i = i+1
+	end
+	return d
+end
+
+amicable = function(n,m)
+	local d = function(n)
+		local s,div = 0,find_divisors(n)
+		for i=1,#div do s = s+div[i] end
+		return s
+	end
+	return d(n) == m and n == d(m)
+end
+
 --returns the n-th triangle number
 triangle = function(n)
 	return (0.5*n)*(n+1)
