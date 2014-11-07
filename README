@@ -2,10 +2,11 @@ Project Euler solutions in as many languages as possible.
 Featuring bad programming practices, unreadable code and
 MS-Batch build scripts (yay).
 
-Languages covered:
-- Ruby (1.9.3)
+Languages covered (chronological order):
 - Lua (5.1)
+- Ruby (1.9.3)
 - Java
 - GolfScript
 - C++
 - C
+- Python (3.4)
