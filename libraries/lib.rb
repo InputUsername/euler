@@ -25,4 +25,12 @@ module Lib
 		}
 		ret
 	end
+	
+	def Lib.divisors(n)
+		d = []
+		for i in 2..(n/2).ceil
+			d << i if n % i == 0
+		end
+		d
+	end
 end
