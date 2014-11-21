@@ -18,6 +18,14 @@ fibonacci = function(maxf)
 	end
 end
 
+table_sum = function(t)
+	local sum = 0
+	for i=1,#t do
+		sum = sum + t[i]
+	end
+	return sum
+end
+
 --returns the number of divisors of n
 divisors = function(n)
 	local count = 2
@@ -35,7 +43,7 @@ end
 find_divisors = function(n)
 	local i = 2
 	local d = {}
-	while (2*i < n) do
+	while (2*i <= n) do
 		if (n%i == 0) then
 			table.insert(d,i)
 		end
@@ -46,9 +54,8 @@ end
 
 amicable = function(n,m)
 	local d = function(n)
-		local s,div = 0,find_divisors(n)
-		for i=1,#div do s = s+div[i] end
-		return s
+		local div = find_divisors(n)
+		return table_sum(div)
 	end
 	return d(n) == m and n == d(m)
 end
