@@ -6,6 +6,7 @@ require 'prime'
 primes = Prime.take_while {|p|
 	p < 1e6
 }
+amount = primes.size
 
 def sum a
 	a.map(&:to_i).reduce(:+)
@@ -13,13 +14,13 @@ end
 
 result = 0
 
-length = 1e6-1
+length = amount - 1
 while length > 2
 	start_pos = 0
 	end_pos = start_pos + length
 	test_pos = end_pos + 1
 	
-	while test_pos <= 1e6
+	while test_pos < amount
 		s = sum primes[start_pos, end_pos]
 		if s == primes[test_pos] then
 			result = s
