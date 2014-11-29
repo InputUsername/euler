@@ -1,9 +1,9 @@
-001: Lua, Ruby, Java, GolfScript, C++, C, Python
+001: Lua, Ruby, Java, GolfScript, C++, C, Python, Common LISP
 002: Lua, Ruby, Java, GolfScript, C++, Python
 003: Lua, Ruby, C++
 004: Lua, Ruby, C++, Python
-005: Lua, Ruby, Java, C++
-006: Ruby
+005: Lua, Ruby, Java, C++, Common LISP
+006: Ruby, Common LISP
 007: Lua, Ruby
 008:
 009: Lua
