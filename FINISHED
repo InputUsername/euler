@@ -1,13 +1,13 @@
-001: Lua, Ruby, Java, GolfScript, C++, C, Python, Common LISP
-002: Lua, Ruby, Java, GolfScript, C++, Python
-003: Lua, Ruby, C++
-004: Lua, Ruby, C++, Python
-005: Lua, Ruby, Java, C++, Common LISP
-006: Ruby, Common LISP
-007: Lua, Ruby
+001: Lua, Ruby, Java, GolfScript, C++, C, Python, Lisp, JavaScript
+002: Lua, Ruby, Java, GolfScript, C++, Python, Lisp, JavaScript
+003: Lua, Ruby, C++, JavaScript
+004: Lua, Ruby, C++, Python, JavaScript
+005: Lua, Ruby, Java, C++, Lisp, JavaScript
+006: Ruby, Common Lisp, JavaScript
+007: Lua, Ruby, JavaScript
 008:
-009: Lua
-010: Lua, Ruby
+009: Lua, JavaScript
+010: Lua, Ruby, JavaScript
 011: Lua
 012:
 013: Python
