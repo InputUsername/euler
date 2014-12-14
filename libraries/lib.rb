@@ -1,4 +1,4 @@
-require "prime"
+require 'prime'
 
 module Lib
 	# load a list of words, formatted as "WORD","WORD 2","ETC"
@@ -15,7 +15,8 @@ module Lib
 	end
 
 	def Lib.factorize(n)
-		primes = Prime.take_while {|p| p < n}
+		upper_bound = Math.sqrt n
+		primes = Prime.take_while {|p| p <= upper_bound}
 		ret = []
 		primes.each {|p|
 			while n%p == 0 do
@@ -25,7 +26,7 @@ module Lib
 		}
 		ret
 	end
-	
+
 	def Lib.divisors(n)
 		d = []
 		for i in 2..(n/2).ceil
