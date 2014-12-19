@@ -17,15 +17,15 @@ language_directories.each do |lang|
 			if problem_num.length < 3 then
 				problem_num = '0' * (3 - problem_num.length) + problem_num
 			end
-			completed[problem_num] ||= [] # if doesn't exist yet, create an array, else do nothing
-			completed[problem_num] << lang
+			completed_problems[problem_num] ||= [] # if doesn't exist yet, create an array, else do nothing
+			completed_problems[problem_num] << lang
 		end
 	end
 end
 
 File.open('COMPLETED', 'w') do |file|
-	completed.keys.sort.each do |key|
-		file.write(key + ': ' + completed[key].join(', '))
+	completed_problems.keys.sort.each do |key|
+		file.write(key + ': ' + completed_problems[key].join(', '))
 		file.write("\n")
 	end
 end
