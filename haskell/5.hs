@@ -1,8 +1,7 @@
 module Main where
 
 main :: IO ()
-main = putStrLn $ show $ euler5 20
+main = putStrLn $ show euler5
 
-euler5 :: Integer -> Integer
-euler5 0 = 1
-euler5 n = lcm n $ euler5 (n-1)
+euler5 :: Integer
+euler5 = foldl (lcm) 1 [1..20]
