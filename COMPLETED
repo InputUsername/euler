@@ -1,16 +1,16 @@
-001: c, ruby, javascript, lisp, golfscript, haskell, lua, python, cpp
-002: ruby, javascript, lisp, golfscript, haskell, lua, python, cpp
-003: ruby, javascript, haskell, lua, cpp
-004: ruby, javascript, lua, python, cpp
-005: ruby, javascript, lisp, haskell, lua, cpp
-006: ruby, javascript, lisp, golfscript, haskell
-007: ruby, javascript, lua
+001: c, cpp, cpp, cpp, gml, golfscript, haskell, javascript, lisp, lua, python, ruby
+002: cpp, cpp, cpp, gml, golfscript, haskell, javascript, lisp, lua, python, ruby
+003: cpp, cpp, cpp, haskell, javascript, lua, ruby
+004: cpp, cpp, cpp, javascript, lua, python, ruby
+005: cpp, cpp, cpp, haskell, javascript, lisp, lua, ruby
+006: cpp, cpp, cpp, golfscript, haskell, javascript, lisp, ruby
+007: cpp, cpp, cpp, javascript, lua, ruby
 008: lua
 009: javascript, lua
-010: ruby, javascript, lua
+010: javascript, lua, ruby
 011: lua
 012: lua
-013: lisp, haskell, lua, python
+013: haskell, lisp, lua, python
 014: lua
 016: haskell, python
 017: ruby
@@ -22,7 +22,7 @@
 027: python
 029: python
 036: lua
-040: ruby, python
+040: python, ruby
 042: lua
 048: python
 049: ruby
