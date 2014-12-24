@@ -1,7 +1,10 @@
+# Java
 java/com/inputusername/java/euler/*.class
 
+# C++
 cpp/*.o
 cpp/*.exe
 
-c/bin
-c/Makefile
+# C
+c/*.o
+c/*.exe
