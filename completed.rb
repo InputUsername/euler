@@ -2,7 +2,7 @@
 
 completed_problems = {}
 
-regex = /.+\/([A-Za-z_]*[0-9]+)\..+/
+regex = /.+\/[A-Za-z_]*([0-9]+)\..+/
 
 file_whitelist = %w(.git .gitignore files libraries COMPLETED FINISHED README TODO update.rb)
 

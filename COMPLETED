@@ -1,5 +1,5 @@
-001: c, gml, ruby, javascript, lisp, golfscript, haskell, lua, python, cpp
-002: ruby, javascript, lisp, golfscript, haskell, lua, python, cpp
+001: c, gml, d, d, ruby, javascript, lisp, golfscript, haskell, lua, python, cpp
+002: d, d, ruby, javascript, lisp, golfscript, haskell, lua, python, cpp
 003: ruby, javascript, haskell, lua, cpp
 004: ruby, javascript, lua, python, cpp
 005: ruby, javascript, lisp, haskell, lua, cpp
@@ -32,5 +32,3 @@
 054: ruby
 055: ruby
 059: ruby
-euler1: d, d
-euler2: d, d
