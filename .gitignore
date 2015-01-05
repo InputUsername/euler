@@ -8,3 +8,7 @@ cpp/*.exe
 # C
 c/*.o
 c/*.exe
+
+# D
+d/*.o
+d/*.exe
