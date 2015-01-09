@@ -29,8 +29,14 @@ module Lib
 
 	def Lib.divisors(n)
 		d = []
-		for i in 2..(n/2).ceil
-			d << i if n % i == 0
+		i = 2
+		while i < Math.sqrt(n).ceil
+			if n % i == 0 then
+				d << i
+				n = n%i
+			else
+				i += 1
+			end
 		end
 		d
 	end
