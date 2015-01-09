@@ -18,6 +18,7 @@ language_directories.each do |lang|
 				problem_num = '0' * (3 - problem_num.length) + problem_num
 			end
 			completed_problems[problem_num] ||= [] # if doesn't exist yet, create an array, else do nothing
+			completed_problems[problem_num].uniq!
 			completed_problems[problem_num] << lang
 		end
 	end
@@ -25,7 +26,7 @@ end
 
 File.open('COMPLETED', 'w') do |file|
 	completed_problems.keys.sort.each do |key|
-		file.write(key + ': ' + completed_problems[key].join(', '))
+		file.write(key + ': ' + completed_problems[key].sort.join(', '))
 		file.write("\n")
 	end
 end
