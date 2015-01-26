@@ -33,11 +33,22 @@ module Lib
 		while i < Math.sqrt(n).ceil
 			if n % i == 0 then
 				d << i
-				n = n%i
+				n = n % i
 			else
 				i += 1
 			end
 		end
 		d
+	end
+
+	def Lib.distinct_prime_factors(n)
+		upper_bound = Math.sqrt n
+		primes = Prime.take_while {|p| p <= upper_bound}
+		primes.inject(0) do |amount,prime|
+			if n%prime == 0 then
+				return amount + 1
+			end
+			amount
+		end
 	end
 end
