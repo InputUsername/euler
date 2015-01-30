@@ -1,4 +1,7 @@
+## About
 Project Euler solutions in as many languages as possible. Featuring bad programming practices, unreadable code and MS-Batch build scripts (yay).
+
+![badge](https://projecteuler.net/profile/InputUsername.png)
 
 ## Languages covered (chronological order):
 1. Lua
@@ -13,9 +16,9 @@ Project Euler solutions in as many languages as possible. Featuring bad programm
 10. Haskell
 11. GameMaker Language (GML)
 12. D
-- HTML (joke)
-13. Visual Basic Script (VBS)
-14. Rust
+13. HTML (joke)
+14. Visual Basic Script (VBS)
+15. Rust
 
 ## Finished problems:
 https://github.com/InputUsername/Euler/blob/master/COMPLETED
