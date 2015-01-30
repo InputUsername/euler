@@ -1,6 +1,6 @@
 Project Euler solutions in as many languages as possible. Featuring bad programming practices, unreadable code and MS-Batch build scripts (yay).
 
-Languages covered (chronological order):
+== Languages covered (chronological order): ==
 # Lua
 # Ruby
 # Java
@@ -17,5 +17,5 @@ Languages covered (chronological order):
 # Visual Basic Script (VBS)
 # Rust
 
-Finished problems:
+== Finished problems: ==
 https://github.com/InputUsername/Euler/blob/master/COMPLETED
