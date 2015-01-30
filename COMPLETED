@@ -1,7 +1,7 @@
 001: c, cpp, d, gml, golfscript, haskell, html, javascript, lisp, lua, python, ruby, rust, vbs
 002: cpp, d, golfscript, haskell, html, javascript, lisp, lua, python, ruby, rust, vbs
 003: cpp, haskell, javascript, lua, ruby
-004: cpp, javascript, lua, python, ruby, vbs
+004: cpp, javascript, lua, python, ruby, rust, vbs
 005: cpp, haskell, javascript, lisp, lua, ruby
 006: c, golfscript, haskell, javascript, lisp, ruby, vbs
 007: javascript, lua, ruby
