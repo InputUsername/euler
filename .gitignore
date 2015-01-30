@@ -12,3 +12,6 @@ c/*.exe
 # D
 d/*.o
 d/*.exe
+
+# Rust
+rust/*.exe
