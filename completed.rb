@@ -4,7 +4,7 @@ completed_problems = {}
 
 regex = /.+\/[A-Za-z_]*([0-9]+)\..+/
 
-file_whitelist = %w(.git .gitignore files libraries COMPLETED FINISHED README TODO update.rb)
+file_whitelist = %w(.git .gitignore files libraries COMPLETED FINISHED README TODO completed.rb)
 
 language_directories = Dir['*']
 language_directories -= file_whitelist
@@ -29,4 +29,5 @@ File.open('COMPLETED', 'w') do |file|
 		file.write(key + ': ' + completed_problems[key].sort.join(', '))
 		file.write("\n")
 	end
+	file.write("\nTotal: " + completed_problems.size.to_s + " challenges in " + language_directories.size.to_s + " languages.\n")
 end
