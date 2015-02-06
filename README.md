@@ -19,6 +19,7 @@ Project Euler solutions in as many languages as possible. Featuring bad programm
 13. HTML (joke)
 14. Visual Basic Script (VBS)
 15. Rust
+16. CoffeeScript
 
 ## Finished problems:
 https://github.com/InputUsername/Euler/blob/master/COMPLETED
