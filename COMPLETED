@@ -14,23 +14,22 @@
 014: lua
 016: haskell, python
 017: ruby
+019: python
 020: haskell, python
 021: python
 022: lua
 024: python
 025: python
 027: python
+028: python
 029: python
 036: lua
-040: python, ruby
+040: python
 042: lua
 043: python
 048: python
 049: ruby
-050: ruby
 052: python
-054: ruby
 055: ruby
-059: ruby
 
-Total: 34 challenges in 16 languages.
+Total: 33 problems in 16 languages.

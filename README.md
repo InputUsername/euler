@@ -1,9 +1,9 @@
 ## About
-Project Euler solutions in as many languages as possible. Featuring bad programming practices, unreadable code and MS-Batch build scripts (yay).
+Project Euler solutions in as many languages as possible.
 
 ![badge](https://projecteuler.net/profile/InputUsername.png)
 
-## Languages covered (chronological order):
+## Languages covered:
 1. Lua
 2. Ruby
 3. Java
@@ -12,7 +12,7 @@ Project Euler solutions in as many languages as possible. Featuring bad programm
 6. C
 7. Python
 8. Common Lisp
-9. JavaScript (or ECMAScript, maybe)
+9. JavaScript/ECMAScript
 10. Haskell
 11. GameMaker Language (GML)
 12. D
